@@ -1,7 +1,8 @@
  
 import About from '@/components/About'
 import Banner from '@/components/Banner' 
-import Services from '@/components/Services'
+import Services from '@/components/Services' 
+import Image from 'next/image'
 import React from 'react'
  
  const Home = () => {
@@ -11,6 +12,7 @@ import React from 'react'
         <Banner/>
         <About/>
         <Services/>
+        
   </>
  
    )
