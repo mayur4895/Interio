@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import Image from "next/image";
+import { CardStackDemo } from "./CardStackServices";
 
 const Services = () => {
   return (
@@ -54,10 +55,9 @@ const Services = () => {
       </div>
 
     
-    <div className=" md:w-[350px]  w-full overflow-hidden     ">
-  <AspectRatio ratio={5/5} className=" fixed">
-    <Image src={"/service1.jpg"} alt="Image" fill className="  border-4 border-gray-200 shadow-md rounded-md object-cover object-center" />
-  </AspectRatio>
+    <div className="   w-full overflow-hidden   md:block  hidden   ">
+    <CardStackDemo/>
+ 
 </div>  
  
 

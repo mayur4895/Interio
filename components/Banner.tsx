@@ -22,10 +22,14 @@ const Banner = () => {
       }>
            
  
- <div className="flex items-center">
- <img src={"/serve1.jpg"} alt="Image"    className=" max-w-5xl -mt-12  -ml-12   h-[30rem] md:h-[40rem]    rounded-md  w-[580px] object-center  " />
-    <img src={"/serve2.jpg"} alt="Image"    className=" max-w-5xl -mt-12  -mr-12 h-[30rem] md:h-[40rem]  rounded-md  w-[580px]   object-center  " />
- </div>
+           <Image
+          src={`/serve1.jpg`}
+          alt="hero"
+          height={720}
+          width={1400}
+          className="mx-auto rounded-2xl object-cover h-full object-center"
+          draggable={false}
+        />
  
       </ContainerScroll>
 
