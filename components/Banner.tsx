@@ -1,43 +1,33 @@
-'use client'
-import Image from "next/image";
-import React from "react";
-import { AspectRatio } from "./ui/aspect-ratio";
+"use client";
 
-import { ContainerScroll } from '@/components/ui/container-scroll-animation'
-const Banner = () => {
+import { motion } from "framer-motion";
+import React from "react"; 
+import { AuroraBackground } from "./ui/aurora-background";
+
+export function Banner() {
   return (
-    <div className=" flex flex-col text-center w-full items-center py-10 gap-y-3">
-     
-
-      <ContainerScroll  titleComponent={
-       <div>
-          <h1 className="lg:text-6xl md:text-5xl text-3xl font-semibold max-w-xl md:max-w-2xl lg:max-w-4xl">
-          Beautify And Enhance Your Space With Our Expertise
-        </h1>
-        <p className=" text-xs md:text-sm md:max-w-2xl max-w-md lg:max-w-4xl">
-          We Help You to Unloack the beautiy and comfort of your space that
+    <AuroraBackground>
+      <motion.div
+        initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="relative flex h-fit flex-col gap-4 items-center justify-center px-4  rounded-xl"
+      >
+        <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
+        Beautify And Enhance Your Space With Our Expertise
+        </div>
+        <div className="font-extralight text-center text-base md:text-xl dark:text-neutral-200 py-4">
+        We Help You to Unloack the beautiy and comfort of your space that
           inspire and inriches your life
-        </p>
-       </div>
-      }>
-           
- 
-           <Image
-          src={`/serve1.jpg`}
-          alt="hero"
-          height={720}
-          width={1400}
-          className="mx-auto rounded-2xl object-cover h-full object-center"
-          draggable={false}
-        />
- 
-      </ContainerScroll>
-
-    
-
-    
-    </div>
+        </div>
+        <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
+         Contact Now
+        </button>
+      </motion.div>
+    </AuroraBackground>
   );
-};
-
-export default Banner;
+}

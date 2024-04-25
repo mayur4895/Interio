@@ -39,25 +39,31 @@ const CARDS = [
     id: 0,
    
     content: (
-        <AspectRatio ratio={5/5} className=" fixed">
+   <div className=" w-[180px]">
+          <AspectRatio ratio={5/5} className=" fixed">
         <Image src={"/service1.jpg"} alt="Image" fill className="  border-4 border-gray-200 shadow-md rounded-md object-cover object-center" />
       </AspectRatio>
+   </div>
     ),
   },
   {
     id: 1,
     content: (
+      <div className=" w-[180px]">
         <AspectRatio ratio={5/5} className=" fixed">
     <Image src={"/service2.jpg"} alt="Image" fill className="  border-4 border-gray-200 shadow-md rounded-md object-cover object-center" />
   </AspectRatio>
+  </div>
     ),
   },
   {
     id: 2,  
     content: (
+      <div className=" w-[180px]">
         <AspectRatio ratio={5/5} className=" fixed">
         <Image src={"/service3.jpg"} alt="Image" fill className="  border-4 border-gray-200 shadow-md rounded-md object-cover object-center" />
       </AspectRatio>
+      </div>
     ),
   },
 ];
