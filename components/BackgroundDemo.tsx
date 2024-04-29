@@ -15,7 +15,7 @@ export function BackgroundBeamsDemo() {
           We provide reliable, scalable, and customizable email solutions for
           your business. Whether you&apos;re sending order confirmations,
           password reset emails, or promotional campaigns, MailJet has got you
-          covered.
+         
         </p>
         <input
           type="text"
