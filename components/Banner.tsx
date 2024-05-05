@@ -17,8 +17,8 @@ export function Banner() {
         }}
         className="relative flex h-fit flex-col gap-4 items-center justify-center px-4  rounded-xl"
       >
-        <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
-        Beautify And Enhance Your Space With Our Expertise
+        <div className="text-3xl md:text-6xl md:max-w-5xl font-bold dark:text-white text-center text-zinc-700">
+        Beautify And Enhance Your <span className="text-blue-600">Space</span> With Our Expertise
         </div>
         <div className="font-extralight text-center text-base md:text-xl dark:text-neutral-200 py-4">
         We Help You to Unloack the beautiy and comfort of your space that

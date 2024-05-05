@@ -3,6 +3,7 @@ import About from '@/components/About'
 import { BackgroundBeamsDemo } from '@/components/BackgroundDemo'
 import { Banner } from '@/components/Banner'
 import { CardStackDemo } from '@/components/CardStackServices'
+import { InfiniteMovingCardsDemo } from '@/components/InfiniteMovingCardsDemo'
 import Services from '@/components/Services' 
 import { BentoGridDemo } from '@/components/bentogridDemo'
 import { BackgroundBeams } from '@/components/ui/background-beams'
@@ -15,6 +16,7 @@ import React from 'react'
     
   <>
         <Banner/>
+        <InfiniteMovingCardsDemo/>
         <About/> 
         <Services/>  
         <BackgroundBeamsDemo/>
